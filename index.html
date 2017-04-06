@@ -16,7 +16,7 @@
       <div>
         <button @click="doLoading">Random</button>
       </div>
-      <div class="echart" style="width:400px;heigth:300px;display: inline-block;">
+      <div class="echart" >
         <i-echarts v-for="(item,index) in bar" :option="item" :loading="loading" :resizable="true" ></i-echarts>
       </div>
     </div>

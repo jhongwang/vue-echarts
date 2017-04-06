@@ -103,13 +103,17 @@ $ npm install --save vue-echarts-v3
         },
         tooltip: {},
         xAxis: {
+          type:"value",
+          data: [5, 20, 36, 10, 10, 20]
           data: ['Shirt', 'Sweater', 'Chiffon Shirt', 'Pants', 'High Heels', 'Socks']
         },
-        yAxis: {},
+        yAxis: {
+           type:"category"
+        },
         series: [{
           name: 'Sales',
           type: 'bar',
-          data: [5, 20, 36, 10, 10, 20]
+          data: ['Shirt', 'Sweater', 'Chiffon Shirt', 'Pants', 'High Heels', 'Socks']
         }]
       }
     }),

@@ -21,18 +21,14 @@ module.exports = {
   resolveLoader: {
     fallback: [path.join(__dirname, '../node_modules')]
   },
-  eslint: {
-    formatter: require('eslint-friendly-formatter')
-  },
+
   module: {
     preLoaders: [{
       test: /\.vue$/,
-      loader: 'eslint',
       include: projectRoot,
       exclude: /node_modules/
     }, {
       test: /\.js$/,
-      loader: 'eslint',
       include: projectRoot,
       exclude: /node_modules/
     }],
